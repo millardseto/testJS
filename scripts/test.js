@@ -20,7 +20,7 @@ while (index <= 12) {
   loopcount++;
 
   // show variable state at end of loop
-  console.log("LoopCount: %s, Index: %s   s1: %s   s2: %s    out: %s", loopcount, index, s1, s2, out);
+  //console.log("LoopCount: %s, Index: %s   s1: %s   s2: %s    out: %s", loopcount, index, s1, s2, out);
 
 
   // WRITE OUTPUT TO DOCUMENT
@@ -28,7 +28,7 @@ while (index <= 12) {
   var table = document.getElementById("myTable");
 
   // Create an empty <tr> element and add it to the 1st position of the table:
-  var row = table.insertRow(index-1);
+  var row = table.insertRow(index);
 
   // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
   var cell1 = row.insertCell(0);
@@ -38,9 +38,9 @@ while (index <= 12) {
   var cell5 = row.insertCell(4);
 
   // Add some text to the new cells:
-  cell1.innerHTML = "LoopCount: " + loopcount;
-  cell2.innerHTML = "Index: " + index;
-  cell3.innerHTML = "s1: " + s1;
-  cell4.innerHTML = "s2: " + s2;
-  cell5.innerHTML = "output: " + out;
+  cell1.innerHTML = loopcount;
+  cell2.innerHTML = index;
+  cell3.innerHTML = s1;
+  cell4.innerHTML = s2;
+  cell5.innerHTML = out;
 }

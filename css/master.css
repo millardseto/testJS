@@ -1,7 +1,13 @@
-table, td {
-  border: 1px solid black;
+body {
+  font-family: sans-serif;
 }
 
-td {
-  padding: 6px;
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+th, td {
+  padding: 1rem;
 }
